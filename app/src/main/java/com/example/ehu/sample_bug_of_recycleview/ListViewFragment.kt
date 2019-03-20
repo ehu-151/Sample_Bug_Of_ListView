@@ -26,7 +26,12 @@ class ListViewFragment : Fragment() {
         val list = (0..100).map { it.toString() }
         binding.listView.apply {
             adapter = ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, list)
-            addHeaderView(getHederView(R.layout.header_item))
+            addHeaderView(getHederView(R.layout.header_item),null,false)
+            addHeaderView(getHederView(R.layout.header_item),null,false)
+            addHeaderView(getHederView(R.layout.header_item),null,false)
+            addHeaderView(getHederView(R.layout.header_item),null,false)
+            addHeaderView(getHederView(R.layout.header_item),null,false)
+            addHeaderView(getHederView(R.layout.header_item),null,false)
         }
 
         return binding.root
